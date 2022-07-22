@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Week Planner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
 
@@ -64,21 +68,24 @@
   </div>
   <div class="dark-background">
     <div class="entry-modal">
-      <h1 class="align-center h1-padding">Add Entry</h1>
-      <div class="select row">
-        <select name="" id="">
-          <option value="Day of Week">Day of Week</option>
-        </select>
-        <select name="" id="">
-          <option value="Time">Time</option>
-        </select>
-      </div>
-      <div class="align-center">
-        <textarea name="description" id="" cols="40" rows="5" placeholder="Description"></textarea>
-      </div>
-      <div class="submit-button">
-        <button>Submit</button>
-      </div>
+      <h1 class="align-center bottom-padding">Add Entry</h1>
+      <form id="form-entry">
+        <div class="select row">
+          <select name="" id="">
+            <option value="Day of Week">Day of Week</option>
+          </select>
+          <select name="" id="">
+            <option value="Time">Time</option>
+          </select>
+        </div>
+        <div class="align-center bottom-padding">
+          <textarea name="description" id="description" cols="45" rows="5" placeholder="Description"></textarea>
+        </div>
+        <div class="submit-button">
+          <button>Submit</button>
+        </div>
+      </form>
+
     </div>
   </div>
 
