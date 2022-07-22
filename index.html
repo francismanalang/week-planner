@@ -78,12 +78,18 @@
       <h1 class="align-center bottom-padding">Add Entry</h1>
       <form id="form-entry">
         <div class="select row">
-          <select name="" id="">
+          <select name="day" id="day">
             <option value="Day of Week">Day of Week</option>
+            <option value="sunday">sunday</option>
+            <option value="monday">monday</option>
+            <option value="tuesday">tuesday</option>
+            <option value="wednesday">wednesday</option>
+            <option value="thursday">thursday</option>
+            <option value="friday">friday</option>
+            <option value="saturday">saturday</option>
           </select>
-          <select name="" id="">
-            <option value="Time">Time</option>
-          </select>
+          <label class="time" for="time">Time:&nbsp;</label>
+          <input class="time" type="time" id="time">
         </div>
         <div class="align-center bottom-padding">
           <textarea name="description" id="description" cols="45" rows="5" placeholder="Description"></textarea>

@@ -89,3 +89,8 @@ select {
   text-decoration: none;
   text-shadow: 0 1px 0 #528ecc;
 }
+
+.time {
+  margin: 0;
+  padding-left: 10px;
+}
