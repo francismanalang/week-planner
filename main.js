@@ -1,3 +1,13 @@
+var data = {
+  editing: null,
+  monday: [],
+  tuesday: [],
+  wednesday: [],
+  thursday: [],
+  friday: [],
+  saturday: [],
+  sunday: []
+};
 
 var $background = document.querySelector('.dark-background');
 var $entryModal = document.querySelector('.entry-modal');
@@ -17,6 +27,11 @@ function submitForm(event) {
   event.preventDefault();
   $background.className = 'dark-background hidden';
   $entryModal.className = 'entry-modal hidden';
+  /*   var entryValues = {
+    time: $formEntry.elements['.which-day'].value
+
+  }; */
+
 }
 
 var $sunday = document.querySelector('.sunday');
