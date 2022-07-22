@@ -14,17 +14,23 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-full align-center">
+      <div class="col-full align-center bottom-padding">
         <h1>Weekly Planner</h1>
       </div>
     </div>
   </div>
 
   <!-- BELOW WILL BE HIDDEN UNTIL MAKE NEW ENTRY DOM-->
-  <div class="container hidden">
+  <div class="container">
     <div class="row">
-      <div class="col-full">
-        <button>monday</button>
+      <div class="col-full flex-col justify-evenly">
+        <button>Sunday</button>
+        <button>Monday</button>
+        <button>Tuesday</button>
+        <button>Wednesday</button>
+        <button>Thursday</button>
+        <button>Friday</button>
+        <button>Saturday</button>
       </div>
     </div>
   </div>
@@ -32,7 +38,7 @@
   <div class="container">
     <div class="row">
       <div class="col-full flex-col justify-center entry-padding">
-        <button>Add Entry  == might need to use fixed</button>
+        <button class="add-entry">Add Entry  == might need to use fixed</button>
       </div>
     </div>
   </div>
@@ -66,8 +72,9 @@
       </div>
     </div>
   </div>
-  <div class="dark-background">
-    <div class="entry-modal">
+
+  <div class="dark-background hidden">
+    <div class="entry-modal hidden">
       <h1 class="align-center bottom-padding">Add Entry</h1>
       <form id="form-entry">
         <div class="select row">
@@ -82,7 +89,7 @@
           <textarea name="description" id="description" cols="45" rows="5" placeholder="Description"></textarea>
         </div>
         <div class="submit-button">
-          <button>Submit</button>
+          <button type="submit">Submit</button>
         </div>
       </form>
 

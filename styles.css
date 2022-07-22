@@ -16,10 +16,6 @@
   flex-basis: 100%;
 }
 
-.hidden {
-  display: none;
-}
-
 .flex-col {
   display: flex;
 }
@@ -68,4 +64,12 @@ select {
 
 .bottom-padding {
   padding-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
