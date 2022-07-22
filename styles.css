@@ -73,3 +73,19 @@ select {
 .justify-evenly {
   justify-content: space-evenly;
 }
+
+.day {
+  box-shadow: 3px 4px 0 0 #1564ad;
+  background: linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+  background-color: #79bbff;
+  border-radius: 5px;
+  border: 1px solid #337bc4;
+  cursor: pointer;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 12px 44px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #528ecc;
+}
