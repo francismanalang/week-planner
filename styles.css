@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: auto;
 }
 
 .container {
@@ -16,4 +17,20 @@
 
 .hidden {
   display: none;
+}
+
+.flex-col {
+  display: flex;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.entry-padding {
+  padding-top: 2rem;
 }
