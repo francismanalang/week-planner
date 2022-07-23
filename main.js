@@ -9,6 +9,19 @@ var data = {
   sunday: []
 };
 
+var previousDataJSON = localStorage.getItem('week-planner-storage');
+
+if (previousDataJSON !== null) {
+  data = JSON.parse(previousDataJSON);
+}
+
+function handleStorga(event) {
+  var dataJSON = JSON.stringify(data);
+  localStorage.setItem('week-planner-storage', dataJSON);
+}
+
+window.addEventListener('beforeunload', handleStorga);
+
 var $background = document.querySelector('.dark-background');
 var $entryModal = document.querySelector('.entry-modal');
 
@@ -27,10 +40,11 @@ function submitForm(event) {
   event.preventDefault();
   $background.className = 'dark-background hidden';
   $entryModal.className = 'entry-modal hidden';
-  /*   var entryValues = {
-    time: $formEntry.elements['.which-day'].value
-
-  }; */
+  var entryValues = {
+    day: $formEntry.elements.day.value,
+    description: $formEntry.elements.description.value,
+    time: $formEntry.elements.time.value
+  };
 
 }
 
