@@ -76,3 +76,19 @@ $friday.addEventListener('click', openModal);
 
 var $saturday = document.querySelector('.saturday');
 $saturday.addEventListener('click', openModal);
+
+
+function itsbig (event) {
+  var $replaceValues = document.querySelector('td');
+  document.querySelectorAll.apply.apply.apply. good luck decodeURIComponent. autofill
+
+  $replaceValues.replaceWith(entryValues.);
+
+  for (var prop in data) {
+    if (prop === entryValues.day) {
+      for (var i = 0; i < data[prop].length; i++) {
+        $replaceValues =
+      }
+    }
+  }
+}
