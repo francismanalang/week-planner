@@ -47,10 +47,13 @@ function submitForm(event) {
   };
 
   console.log(data);
+  var $scheduleDay = document.querySelector('.schedule');
+  $scheduleDay.textContent += [prop];
 
   for (var prop in data) {
     if (prop === entryValues.day) {
       data[prop].push(entryValues);
+
     }
   }
 
