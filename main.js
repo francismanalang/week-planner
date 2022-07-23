@@ -46,6 +46,14 @@ function submitForm(event) {
     time: $formEntry.elements.time.value
   };
 
+  console.log(data);
+
+  for (var prop in data) {
+    if (prop === entryValues.day) {
+      data[prop].push(entryValues);
+    }
+  }
+
 }
 
 var $sunday = document.querySelector('.sunday');
